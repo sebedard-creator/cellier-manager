@@ -4,6 +4,39 @@ Cellier Manager is a local-first Android application for managing a personal win
 
 The current development release is **Android 2.1.14-dev**, **companion 0.2.13**, and **Chrome extension 0.6.8**.
 
+## Highlights
+
+- Local wine and beer inventory with photos, OCR-assisted entry, quantities, search, sorting, and detailed filters.
+- Optional enrichment from SAQ, Vivino, and Untappd through a normal Chrome session, with visible progress and explicit match status.
+- Bromelier, an optional conversational cellar advisor that recommends bottles already present in the inventory.
+- Portable `.cellierbackup` archives containing the inventory, photos, and enrichment provenance.
+- Offline-first daily use: the inventory remains available when the computer or enrichment service is offline.
+
+## Screenshots
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="docs/images/inventory.png" alt="Main cellar inventory" width="320"><br>
+      <strong>Main cellar</strong>
+    </td>
+    <td align="center">
+      <img src="docs/images/wine-details.png" alt="Wine details with Vivino enrichment" width="320"><br>
+      <strong>Wine details</strong>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="docs/images/beer-details.png" alt="Beer details with Untappd enrichment" width="320"><br>
+      <strong>Beer details</strong>
+    </td>
+    <td align="center">
+      <img src="docs/images/bromelier.png" alt="Bromelier recommendation interface" width="320"><br>
+      <strong>Bromelier</strong>
+    </td>
+  </tr>
+</table>
+
 ## How it works
 
 The project has three components:
@@ -26,6 +59,10 @@ The normal enrichment flow is:
 
 The product name and producer are updated to the canonical values found on the selected source when the identity match is strong. Quantity is never changed by enrichment. If the computer is unavailable, the cellar, photos, OCR, filters, editing, and quantity controls continue to work locally.
 
+## Bromelier
+
+Bromelier is an optional in-app cellar advisor powered by the official Anthropic Messages API. Android first narrows the available inventory locally by beverage type and wine colour, then sends only that shortlist together with the selected mood, free-text preference, and conversation to Claude. Its recommendations link back to bottles that are actually present in the cellar; Bromelier does not modify the inventory, trigger browser enrichment, or require the Windows companion. The user-provided Anthropic API key is encrypted at rest with Android Keystore and excluded from inventory backups.
+
 The full design specification is in [architecture.md](architecture.md). Current implementation and audit notes are in [docs/audit-handoff.md](docs/audit-handoff.md), and setup instructions are in [docs/installation.md](docs/installation.md).
 
 ## Requirements
@@ -34,6 +71,7 @@ The full design specification is in [architecture.md](architecture.md). Current 
 - Python 3.11 or newer
 - Node.js 20 or newer
 - Google Chrome on Windows for product enrichment
+- An Anthropic API key for Bromelier (optional)
 
 ## Android development
 
