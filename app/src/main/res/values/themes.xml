@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Thème de base hérité Material 3 — les couleurs réelles sont définies
+         dans Compose (ui/theme/Theme.kt). Ce fichier sert uniquement pour
+         l'écran de démarrage avant que Compose prenne le relais. -->
+    <style name="Theme.CellierManager" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">@color/surface_dark</item>
+        <item name="android:navigationBarColor">@color/surface_dark</item>
+        <item name="android:windowBackground">@color/background_dark</item>
+    </style>
+</resources>

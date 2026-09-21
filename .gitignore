@@ -1,0 +1,63 @@
+# IDE and operating system files
+.idea/
+*.iml
+.DS_Store
+
+# Local Android and Gradle state
+.gradle/
+.kotlin/
+local.properties
+**/build/
+.externalNativeBuild/
+.cxx/
+
+# Python environments and generated metadata
+companion/.venv/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Node dependencies and compiled extension output
+extension/node_modules/
+extension/dist/
+
+# Generated release artifacts
+dist/
+*.apk
+*.aab
+
+# Private runtime data and exports
+captures/
+device-backups/
+*.cellierbackup
+cellier-pairing*.json
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# Secrets and machine-local configuration
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Historical root diagnostics kept locally but excluded from source control
+/algolia*.json
+/vivino_sassicaia.html
+/result.json
+/Patch.kt
+/Test*.kt
+/TestLocale.java

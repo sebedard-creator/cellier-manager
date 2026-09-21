@@ -1,0 +1,8 @@
+:root { color-scheme: dark; font: 14px system-ui; }
+body { width: 360px; margin: 0; padding: 16px; background: #171214; color: #f5edef; }
+h1 { font-size: 18px; margin: 0; } header p { color: #c8b7bc; }
+section { margin: 14px 0; } label { display: block; margin: 10px 0; }
+input { box-sizing: border-box; width: 100%; margin-top: 4px; padding: 8px; background: #2a2023; color: inherit; border: 1px solid #59434a; border-radius: 6px; }
+button { border: 0; border-radius: 7px; padding: 9px 12px; background: #8b3548; color: white; cursor: pointer; }
+button.secondary { background: #33272b; } .job { padding: 10px; margin: 8px 0; border: 1px solid #59434a; border-radius: 8px; }
+.job button { margin-top: 8px; } .error { color: #ff9b9b; }

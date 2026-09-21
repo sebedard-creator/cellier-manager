@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Cellier Manager",
+  "description": "Capture une fiche produit choisie pour Cellier Manager.",
+  "version": "0.6.8",
+  "permissions": ["activeTab", "scripting", "storage", "tabs"],
+  "host_permissions": ["http://127.0.0.1/*", "https://*.saq.com/*", "https://*.vivino.com/*", "https://*.untappd.com/*"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "action": {
+    "default_title": "Cellier Manager",
+    "default_popup": "popup/popup.html"
+  }
+}

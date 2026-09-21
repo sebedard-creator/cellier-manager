@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="fr">
+  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="stylesheet" href="popup.css"></head>
+  <body>
+    <header><h1>Cellier Manager</h1><p id="status">Connexion…</p></header>
+    <section id="config" hidden>
+      <label>Adresse du compagnon <input id="server" value="http://127.0.0.1:18765"></label>
+      <label>Identifiant de jumelage <input id="pairingId"></label>
+      <label>Secret de jumelage <input id="pairingSecret" type="password"></label>
+      <button id="save">Jumeler l’extension</button>
+    </section>
+    <section id="jobs"></section>
+    <section id="active" hidden>
+      <p id="target"></p>
+      <button id="capture">Capturer cette fiche</button>
+    </section>
+    <button id="showConfig" class="secondary">Configuration</button>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

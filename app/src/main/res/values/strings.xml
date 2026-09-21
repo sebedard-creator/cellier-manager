@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mon Cellier</string>
+
+    <!-- Écran Consulter -->
+    <string name="consulter_title">Mon cellier</string>
+    <string name="consulter_search_hint">Rechercher par producteur ou nom…</string>
+    <string name="consulter_empty_title">Cellier vide</string>
+    <string name="consulter_empty_message">Touchez le bouton + pour ajouter votre première bouteille</string>
+    <string name="consulter_all">Tous</string>
+    <string name="consulter_wine">Vin</string>
+    <string name="consulter_beer">Bière</string>
+    <string name="consulter_filter_vintage">Millésime</string>
+    <string name="consulter_filter_producer">Producteur</string>
+    <string name="consulter_filter_country">Pays</string>
+    <string name="consulter_filter_grape">Cépage</string>
+    <string name="consulter_filter_region">Région</string>
+    <string name="consulter_filter_wine_color">Couleur</string>
+    <string name="consulter_filter_search_hint">Rechercher…</string>
+    <string name="consulter_sort_date">Ajout récent</string>
+    <string name="consulter_sort_vintage">Millésime</string>
+    <string name="consulter_sort_producer">Producteur</string>
+    <string name="consulter_sort_name">Nom</string>
+    <string name="consulter_results">%1$d résultat(s)</string>
+
+    <!-- Écran Ajouter -->
+    <string name="ajouter_title">Nouvelle fiche</string>
+    <string name="ajouter_photo_hint">Prendre la photo</string>
+    <string name="ajouter_photo_subhint">Touchez pour ouvrir l\'appareil photo</string>
+    <string name="ajouter_photo_capture_failed">La photo n\'a pas ete enregistree. Reessayez.</string>
+    <string name="ajouter_field_producer">Producteur</string>
+    <string name="ajouter_field_name">Nom du produit</string>
+    <string name="ajouter_field_vintage">Millésime</string>
+    <string name="ajouter_field_vintage_required">Millésime *</string>
+    <string name="ajouter_field_wine_color">Couleur</string>
+    <string name="ajouter_save">Enregistrer la fiche</string>
+    <string name="ocr_open">Lire l\'étiquette</string>
+    <string name="ocr_title">OCR étiquette</string>
+    <string name="ocr_select_text">Surligne une zone de texte</string>
+    <string name="ocr_processing">Lecture du texte…</string>
+    <string name="ocr_result">Texte détecté</string>
+    <string name="ocr_use_producer">Producteur</string>
+    <string name="ocr_use_name">Nom</string>
+    <string name="ocr_use_vintage">Millésime</string>
+    <string name="ocr_load_failed">Impossible de charger la photo</string>
+    <string name="ocr_selection_too_small">Sélection trop petite</string>
+    <string name="ocr_no_text">Aucun texte détecté</string>
+
+    <!-- Écran Fiche produit -->
+    <string name="fiche_quantity_remaining">Quantité restante</string>
+    <string name="fiche_quantity_bottles">bouteille(s)</string>
+    <string name="fiche_country">Pays</string>
+    <string name="fiche_region">Région</string>
+    <string name="fiche_grapes">Cépages</string>
+    <string name="fiche_style">Style</string>
+    <string name="fiche_alcohol">Alc./vol.</string>
+    <string name="fiche_alcohol_value">%1$.1f %%</string>
+    <string name="fiche_ibu">IBU</string>
+    <string name="fiche_ibu_value">%1$d</string>
+    <string name="fiche_links">Liens</string>
+    <string name="fiche_link_vivino">Voir sur Vivino</string>
+    <string name="fiche_link_untappd">Voir sur Untappd</string>
+    <string name="fiche_link_saq">Voir sur SAQ</string>
+    <string name="fiche_search_vivino">Rechercher sur Vivino</string>
+    <string name="fiche_search_untappd">Rechercher sur Untappd</string>
+    <string name="fiche_search_saq">Rechercher sur SAQ</string>
+    <string name="fiche_search_found">Recherche %1$s envoyée. Chrome va s’ouvrir automatiquement sur l’ordinateur.</string>
+    <string name="fiche_search_no_result">Aucun résultat trouvé sur %1$s</string>
+    <string name="fiche_search_rate_limited">Recherche %1$s temporairement limitee. Reessayez plus tard.</string>
+    <string name="fiche_search_provider_busy">Compagnon temporairement occupé pour %1$s. Réessaie plus tard.</string>
+    <string name="fiche_search_network_error">Ordinateur indisponible. Ton inventaire reste accessible.</string>
+    <string name="fiche_match_perfect">Match parfait</string>
+    <string name="fiche_match_approx">Match approximatif</string>
+    <string name="fiche_confirm_match">Confirmer le match</string>
+    <string name="fiche_indexing">Recherche en attente…</string>
+    <string name="fiche_indexing_hint">Ouvre la recherche dans Chrome sur ton ordinateur.</string>
+    <string name="fiche_sync_failed">Aucun résultat trouvé</string>
+    <string name="fiche_sync_failed_hint">Réessayez ou lancez une recherche manuelle plus bas.</string>
+    <string name="fiche_sync_retry">Réessayer</string>
+    <string name="fiche_sync_rate_limited">Recherche temporairement limitée</string>
+    <string name="fiche_sync_rate_limited_hint">Réessaie la synchronisation avec le compagnon un peu plus tard.</string>
+    <string name="fiche_sync_provider_busy">Compagnon occupé</string>
+    <string name="fiche_sync_provider_busy_hint">Réessaie la synchronisation avec l’ordinateur un peu plus tard.</string>
+    <string name="fiche_sync_network_error">Ordinateur indisponible</string>
+    <string name="fiche_sync_network_error_hint">Ton inventaire reste accessible. Vérifie que le compagnon est démarré et sur le même réseau.</string>
+    <string name="fiche_edit_save">Enregistrer</string>
+    <string name="fiche_edit_cancel">Annuler</string>
+    <string name="fiche_delete_title">Supprimer la fiche ?</string>
+    <string name="fiche_delete_message">Cette action ne peut pas être annulée.</string>
+    <string name="fiche_delete_confirm">Supprimer</string>
+    <string name="fiche_delete_cancel">Annuler</string>
+    <string name="fiche_reset_title">Réinitialiser les recherches ?</string>
+    <string name="fiche_reset_message">Les liens Vivino, Untappd et SAQ, les confirmations et les champs trouvés automatiquement seront effacés. Producteur, produit et millésime seront conservés.</string>
+    <string name="fiche_reset_confirm">Réinitialiser</string>
+    <string name="fiche_reset_done">Recherches réinitialisées</string>
+    <string name="fiche_badge_wine">Vin</string>
+    <string name="fiche_badge_beer">Bière</string>
+
+    <!-- Général -->
+    <string name="action_back">Retour</string>
+    <string name="action_close">Fermer</string>
+    <string name="action_edit">Modifier</string>
+    <string name="action_delete">Supprimer</string>
+    <string name="action_reset_sources">Réinitialiser les recherches</string>
+    <string name="action_add">Ajouter</string>
+</resources>
